@@ -1,0 +1,262 @@
+const ContactInfo = {
+    contact_phone: "+923369430649",
+    contact_email: "zararanwar1234321@gmail.com",
+    address: "Abbottabad Khyber Pakhtun Khowa",
+    facebook: "https://facebook.com",
+    twitter: "https://facebook.com",
+    linkedin: "https://facebook.com",
+    instagram: "https://facebook.com",
+    youtube: "https://facebook.com",
+    time: "9:00 am - 4:00 pm Sunday Off",
+}
+
+
+const teamMembers = [
+    {id: 1, name: "Alice Smith", title: "Project Manager"},
+    {id: 2, name: "Bob Johnson", title: "Software Engineer"},
+    {id: 3, name: "Catherine Lee", title: "UX Designer"},
+    {id: 4, name: "David Brown", title: "Data Analyst"},
+    {id: 5, name: "Emily Davis", title: "Marketing Specialist"},
+    {id: 6, name: "Frank Wilson", title: "Quality Assurance"},
+    {id: 7, name: "Grace Taylor", title: "Content Strategist"},
+    {id: 8, name: "Henry Moore", title: "DevOps Engineer"},
+];
+
+const data = [
+    {
+        name: "Wireless Bluetooth Headphones",
+        description: "Experience premium sound quality with these noise-cancelling Bluetooth headphones. Perfect for music lovers, travelers, and professionals.",
+        price: 100.00,
+        stock: 50,
+        category: "Electronics",
+        image: "img/product/image1.png",
+        is_available: true,
+        slug: "wireless-bluetooth-headphones",
+        created_at: "2024-11-08T10:00:00Z",
+        updated_at: "2024-11-08T10:00:00Z",
+        discount_percentage: 10.00,
+        discount_active: true,
+        featured_product: true
+    },
+    {
+        name: "Smartphone with 5G",
+        description: "A sleek, high-performance smartphone with a 6.5-inch display and 5G connectivity for fast internet speeds.",
+        price: 200.00,
+        stock: 30,
+        category: "Electronics",
+        image: "img/product/image2.png",
+        is_available: true,
+        slug: "smartphone-with-5g",
+        created_at: "2024-11-08T11:00:00Z",
+        updated_at: "2024-11-08T11:00:00Z",
+        discount_percentage: 5.00,
+        discount_active: true,
+        featured_product: false
+    },
+    {
+        name: "Organic Almonds - 1kg",
+        description: "Premium quality organic almonds, perfect for snacking or adding to your favorite recipes. Packed with essential nutrients.",
+        price: 150.00,
+        stock: 20,
+        category: "Food & Snacks",
+        image: "img/product/image3.png",
+        is_available: true,
+        slug: "organic-almonds-1kg",
+        created_at: "2024-11-08T12:00:00Z",
+        updated_at: "2024-11-08T12:00:00Z",
+        discount_percentage: 15.00,
+        discount_active: false,
+        featured_product: true
+    },
+    {
+        name: "LED Desk Lamp with USB Charging Port",
+        description: "A modern LED desk lamp with adjustable brightness and a built-in USB charging port. Ideal for your home or office workspace.",
+        price: 250.00,
+        stock: 100,
+        category: "Home & Office",
+        image: "img/product/image4.png",
+        is_available: true,
+        slug: "led-desk-lamp-with-usb-charging-port",
+        created_at: "2024-11-08T13:00:00Z",
+        updated_at: "2024-11-08T13:00:00Z",
+        discount_percentage: 20.00,
+        discount_active: true,
+        featured_product: false
+    },
+    {
+        name: "Bamboo Toothbrushes - Pack of 4",
+        description: "Eco-friendly bamboo toothbrushes with soft bristles for a sustainable dental care routine. Comes in a pack of four for long-lasting use.",
+        price: 50.00,
+        stock: 10,
+        category: "Health & Beauty",
+        image: "img/product/image5.png",
+        is_available: false,
+        slug: "bamboo-toothbrushes-pack-of-4",
+        created_at: "2024-11-08T14:00:00Z",
+        updated_at: "2024-11-08T14:00:00Z",
+        discount_percentage: 0.00,
+        discount_active: false,
+        featured_product: false
+    },
+    {
+        name: "Men's Sports Watch",
+        description: "Stylish and durable sports watch with water resistance, perfect for active men. Features a sleek design and multiple functions.",
+        price: 80.00,
+        stock: 40,
+        category: "Fashion",
+        image: "img/product/image6.jpg",
+        is_available: true,
+        slug: "mens-sports-watch",
+        created_at: "2024-11-08T15:00:00Z",
+        updated_at: "2024-11-08T15:00:00Z",
+        discount_percentage: 5.00,
+        discount_active: true,
+        featured_product: true
+    },
+    {
+        name: "Leather Wallet",
+        description: "Premium leather wallet with a classic design. Features multiple card slots and a spacious bill compartment for convenience.",
+        price: 130.00,
+        stock: 60,
+        category: "Fashion",
+        image: "img/product/image7.jpg",
+        is_available: true,
+        slug: "leather-wallet",
+        created_at: "2024-11-08T16:00:00Z",
+        updated_at: "2024-11-08T16:00:00Z",
+        discount_percentage: 10.00,
+        discount_active: false,
+        featured_product: false
+    },
+    {
+        name: "Yoga Mat - Non-slip",
+        description: "Comfortable and durable yoga mat with a non-slip surface, designed to enhance your yoga practice and provide extra cushioning.",
+        price: 220.00,
+        stock: 70,
+        category: "Sports & Outdoors",
+        image: "img/product/image8.jpg",
+        is_available: true,
+        slug: "yoga-mat-non-slip",
+        created_at: "2024-11-08T17:00:00Z",
+        updated_at: "2024-11-08T17:00:00Z",
+        discount_percentage: 25.00,
+        discount_active: true,
+        featured_product: true
+    },
+    {
+        name: "Handcrafted Wooden Bowl",
+        description: "A beautifully handcrafted wooden bowl, perfect for serving salads, fruits, or snacks. Adds a rustic touch to your kitchen.",
+        price: 90.00,
+        stock: 15,
+        category: "Home & Office",
+        image: "img/product/image9.jpg",
+        is_available: true,
+        slug: "handcrafted-wooden-bowl",
+        created_at: "2024-11-08T18:00:00Z",
+        updated_at: "2024-11-08T18:00:00Z",
+        discount_percentage: 0.00,
+        discount_active: false,
+        featured_product: false
+    },
+    {
+        name: "Portable Mini Blender",
+        description: "Compact and efficient mini blender, perfect for making smoothies on the go. Comes with a USB charging port for easy use.",
+        price: 300.00,
+        stock: 5,
+        category: "Home Appliances",
+        image: "img/product/image10.jpg",
+        is_available: true,
+        slug: "portable-mini-blender",
+        created_at: "2024-11-08T19:00:00Z",
+        updated_at: "2024-11-08T19:00:00Z",
+        discount_percentage: 50.00,
+        discount_active: true,
+        featured_product: true
+    }
+];
+
+const blogs_data = [
+    {
+        title: "Top 5 Trends in Casual Wear for 2024",
+        slug: "top-5-trends-casual-wear-2024",
+        author: "Fashionista Daily",
+        content: "Explore the latest trends in casual wear for 2024. From oversized tees to retro jeans, we cover how to stay stylish and comfortable. Discover outfit inspiration and styling tips to elevate your everyday look.",
+        category: "fashion",
+        image: "assets/img/why-choose/pic1.avif",
+        tags: "casual wear, fashion trends, styling tips",
+        created_at: "2024-10-01",
+        updated_at: "2024-10-01",
+        published_at: "2024-10-01",
+        is_published: true
+    },
+    {
+        title: "How to Style a Basic White T-Shirt",
+        slug: "how-to-style-basic-white-tshirt",
+        author: "Style Expert",
+        content: "A white t-shirt is a wardrobe essential. Learn multiple ways to style this versatile piece, whether for a laid-back look, a smart-casual vibe, or a trendy layered outfit. Get inspired with creative ideas to make the most out of your basics.",
+        category: "styling",
+        image: "assets/img/why-choose/pic2.avif",
+        tags: "white t-shirt, wardrobe essentials, styling tips",
+        created_at: "2024-09-15",
+        updated_at: "2024-09-15",
+        published_at: "2024-09-15",
+        is_published: true
+    },
+    {
+        title: "Essential Accessories for Every Season",
+        slug: "essential-accessories-every-season",
+        author: "Accessory Guru",
+        content: "Accessories can transform any outfit. Discover must-have accessories for each season, from scarves and hats in winter to sunglasses and bracelets in summer. Find out how to mix and match to complete your look effortlessly.",
+        category: "accessories",
+        image: "assets/img/why-choose/pic3.jpg",
+        tags: "accessories, seasonal fashion, styling tips",
+        created_at: "2024-08-10",
+        updated_at: "2024-08-10",
+        published_at: "2024-08-10",
+        is_published: true
+    },
+    {
+        title: "Choosing the Right Fit: A Guide to Denim",
+        slug: "choosing-right-fit-denim-guide",
+        author: "Denim Insider",
+        content: "Finding the perfect denim fit can be a challenge. Learn how to choose jeans that complement your body type and style preferences. From skinny to relaxed fit, we cover what you need to know about denim options and trends.",
+        category: "denim",
+        image: "assets/img/why-choose/pic4.avif",
+        tags: "denim, jeans, fashion tips",
+        created_at: "2024-07-20",
+        updated_at: "2024-07-20",
+        published_at: "2024-07-20",
+        is_published: true
+    },
+    {
+        title: "Sustainable Fashion: Top Ethical Brands to Know",
+        slug: "sustainable-fashion-ethical-brands",
+        author: "Eco Chic",
+        content: "Sustainable fashion is more than a trend. Dive into the world of eco-friendly clothing and discover ethical brands making a positive impact. Learn how to build a wardrobe that reflects both style and sustainability.",
+        category: "sustainable fashion",
+        image: "assets/img/why-choose/pic5.jpg",
+        tags: "sustainable fashion, ethical brands, eco-friendly",
+        created_at: "2024-06-25",
+        updated_at: "2024-06-25",
+        published_at: "2024-06-25",
+        is_published: true
+    },
+    {
+        title: "10 Must-Have Pieces for a Timeless Wardrobe",
+        slug: "must-have-pieces-timeless-wardrobe",
+        author: "Style Essentials",
+        content: "Creating a timeless wardrobe is all about quality over quantity. Discover the essential pieces that never go out of style, from a classic trench coat to versatile boots. Perfect your wardrobe with items that stand the test of time.",
+        category: "wardrobe",
+        image: "assets/img/why-choose/pic6.jpeg",
+        tags: "wardrobe essentials, timeless fashion, fashion basics",
+        created_at: "2024-05-18",
+        updated_at: "2024-05-18",
+        published_at: "2024-05-18",
+        is_published: true
+    }
+];
+
+
+const server_ip = 'http://localhost:800'
+
+export {ContactInfo, teamMembers, server_ip, data, blogs_data}
